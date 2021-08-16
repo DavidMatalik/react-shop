@@ -1,0 +1,17 @@
+#shop-cart {
+  position: fixed;
+  right: 20px;
+  top: 50px;
+  background: black;
+  color: white;
+  width: fit-content;
+  font-size: 150%;
+  padding: 10px;
+}
+
+button{
+  cursor: pointer;
+  height: 30px;
+  margin: 5px;
+  font-size: 80%;
+}

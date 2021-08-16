@@ -1,6 +1,13 @@
+import ShopCart from "./ShopCart"
+
 const Shop = () => {
+  // Implement Logic for itemcounter
+
   return (
-    <h1>This is Shop</h1>
+    <div>
+      <h1>This is Shop</h1>
+      <ShopCart itemCounter="5"/>
+    </div>
   )
 }
 
