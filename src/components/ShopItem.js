@@ -1,12 +1,14 @@
 import './ShopItem.css'
 
 const ShopItem = (props) => {
+  const { updateCart, handleChange } = props
+  
   return (
     <div className="item">
       <h2>{props.title}</h2>
-      <form>
-        <input type="number" required/>
-        <input type="submit" />
+      <form onSubmit={updateCart}>
+        <input type="number" onChange={handleChange} required/>
+        <input type="submit"/>
       </form>
     </div>
   )
