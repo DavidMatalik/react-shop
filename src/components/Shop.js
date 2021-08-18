@@ -4,20 +4,15 @@ import { useState } from 'react'
 import './Shop.css'
 
 const Shop = () => {
-  const [itemCounter, setItemCounter] = useState(0)
-  const  [item1State, setItem1State] = useState(0)
+  const [itemsTotal, setItemTotal] = useState(0)
 
-  const handleChange = (ev) =>  {
-    const { value } = ev.target
-    setItem1State(value)
-  }
-
-  const updateCart = (ev) => {
+  const updateCart = (ev, items) => {
     const form = ev.target
     ev.preventDefault()
 
     if (form.checkValidity()){
-      setItemCounter(item1State)
+      items = parseInt(items)
+      setItemTotal(items + itemsTotal)
     }
   }
 
@@ -25,11 +20,11 @@ const Shop = () => {
     <div>
       <h1>This is Shop</h1>
       <section id="items">
-        <ShopCart itemCounter={itemCounter}/>
-        <ShopItem title="Item 1" updateCart={updateCart} handleChange={handleChange}/>
-        <ShopItem title="Item 2" />
-        <ShopItem title="Item 3" />
-        <ShopItem title="Item 4" />
+        <ShopCart itemsTotal={itemsTotal}/>
+        <ShopItem title="Item 1" updateCart={updateCart} />
+        <ShopItem title="Item 2" updateCart={updateCart} />
+        <ShopItem title="Item 3" updateCart={updateCart} />
+        <ShopItem title="Item 4" updateCart={updateCart} />
       </section>
     </div>
   )
