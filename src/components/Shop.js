@@ -1,30 +1,47 @@
 import ShopCart from './ShopCart'
 import ShopItem from './ShopItem'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Shop.css'
 
 const Shop = () => {
   const [itemsTotal, setItemTotal] = useState(0)
+  const [items, setItems] = useState([])
 
   const updateCart = (ev, items) => {
     const form = ev.target
     ev.preventDefault()
 
-    if (form.checkValidity()){
+    if (form.checkValidity()) {
       items = parseInt(items)
       setItemTotal(items + itemsTotal)
     }
   }
 
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products')
+      .then((res) => res.json())
+      .then((fetchedItems) => {
+        setItems(
+          fetchedItems.map((item, i) => {
+            return (
+              <ShopItem
+                title={item.title}
+                image={item.image}
+                key={i}
+                updateCart={updateCart}
+              />
+            )
+          })
+        )
+      })
+  }, [])
+
   return (
     <div>
       <h1>This is Shop</h1>
-      <section id="items">
-        <ShopCart itemsTotal={itemsTotal}/>
-        <ShopItem title="Item 1" updateCart={updateCart} />
-        <ShopItem title="Item 2" updateCart={updateCart} />
-        <ShopItem title="Item 3" updateCart={updateCart} />
-        <ShopItem title="Item 4" updateCart={updateCart} />
+      <section id='items'>
+        <ShopCart itemsTotal={itemsTotal} />
+        {items}
       </section>
     </div>
   )
