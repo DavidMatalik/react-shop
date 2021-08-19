@@ -21,13 +21,14 @@ const ShopItem = (props) => {
       <img alt={props.title} src={props.image} />
       <form onSubmit={(ev) => handleSubmit(ev)}>
         <input
+          className='item-input'
           value={itemState}
           type='number'
           onChange={handleChange}
           required
           min='0'
         />
-        <input type='submit' />
+        <input className='item-btn' type='submit' value='Add to Cart' />
       </form>
     </div>
   )
