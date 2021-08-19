@@ -9,12 +9,17 @@ const ShopItem = (props) => {
     const { value } = ev.target
     setItemState(value)
   }
+
+  const handleSubmit = (ev) => {
+    updateCart(ev, itemState)
+    setItemState(0)
+  }
   
   return (
     <div className="item">
       <h2>{props.title}</h2>
-      <form onSubmit={(ev) => updateCart(ev, itemState)}>
-        <input type="number" onChange={handleChange} required/>
+      <form onSubmit={(ev) => handleSubmit(ev)}>
+        <input value={itemState} type="number" onChange={handleChange} required min="0"/>
         <input type="submit"/>
       </form>
     </div>
