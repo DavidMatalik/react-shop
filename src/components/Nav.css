@@ -1,5 +1,8 @@
 nav {
-  background: #a2dbfa;
+  background: #e8f0f2;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 ul {
@@ -10,11 +13,17 @@ ul {
 }
 
 .nav-link {
+  background: #053742;
   width: 100%;
+  margin: 5px;
+  margin-bottom: 0;
   text-decoration: none;
-  color: black;
+  color: white;
+  padding: 8px;
+  transition: background-color 1s;
 }
 
-li:hover {
-  background: rgb(187, 178, 178);
+.active,
+.nav-link:hover {
+  background: #39a2db;
 }
