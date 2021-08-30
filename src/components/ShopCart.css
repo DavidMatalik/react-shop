@@ -6,6 +6,7 @@
   color: white;
   font-size: 150%;
   padding: 10px 50px;
+  border-radius: 5px;
 }
 
 #cart-btn {
@@ -16,6 +17,7 @@
   font-size: 80%;
   background: white;
   transition: transform 0.2s;
+  border-radius: 2px;
 }
 
 #cart-btn:hover {

@@ -12,12 +12,14 @@ h2 {
   padding: 1%;
   background: #a2dbfa;
   margin: 0 5px 20px;
+  border-radius: 7px;
 }
 
 img {
   width: 200px;
   height: 200px;
   margin: 20px;
+  border-radius: 5px;
 }
 
 .item-input {
@@ -27,6 +29,7 @@ img {
   width: 40px;
   margin-right: 5px;
   background: white;
+  border-radius: 2px;
 }
 
 .item-btn {
@@ -36,6 +39,7 @@ img {
   background: white;
   cursor: pointer;
   transition: transform 0.2s;
+  border-radius: 3px;
 }
 
 .item-btn:hover {

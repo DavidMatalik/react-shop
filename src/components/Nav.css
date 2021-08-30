@@ -21,6 +21,7 @@ ul {
   color: white;
   padding: 8px;
   transition: background-color 1s;
+  border-radius: 3px;
 }
 
 .active,
