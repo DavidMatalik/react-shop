@@ -18,7 +18,7 @@ const ShopItem = (props) => {
   return (
     <div className='item'>
       <h2>{props.title}</h2>
-      <img alt={props.title} src={props.image} />
+      <img className='item-img' alt={props.title} src={props.image} />
       <form onSubmit={(ev) => handleSubmit(ev)}>
         <input
           className='item-input'

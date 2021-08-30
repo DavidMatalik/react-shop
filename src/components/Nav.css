@@ -22,9 +22,11 @@ ul {
   padding: 8px;
   transition: background-color 1s;
   border-radius: 3px;
+  box-shadow: 2px 2px #05374246;
 }
 
 .active,
 .nav-link:hover {
   background: #39a2db;
+  box-shadow: 2px 2px #39a2db56;
 }

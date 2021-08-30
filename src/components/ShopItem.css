@@ -13,13 +13,15 @@ h2 {
   background: #a2dbfa;
   margin: 0 5px 20px;
   border-radius: 7px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.233);
 }
 
-img {
+.item-img {
   width: 200px;
   height: 200px;
   margin: 20px;
   border-radius: 5px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.233);
 }
 
 .item-input {
@@ -30,6 +32,7 @@ img {
   margin-right: 5px;
   background: white;
   border-radius: 2px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.233);
 }
 
 .item-btn {
@@ -40,6 +43,7 @@ img {
   cursor: pointer;
   transition: transform 0.2s;
   border-radius: 3px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.233);
 }
 
 .item-btn:hover {
