@@ -11,7 +11,7 @@ h2 {
   min-width: 300px;
   padding: 1%;
   background: #a2dbfa;
-  margin-bottom: 20px;
+  margin: 0 5px 20px;
 }
 
 img {
@@ -34,4 +34,10 @@ img {
   height: 40px;
   width: 200px;
   background: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.item-btn:hover {
+  transform: scale(1.02);
 }

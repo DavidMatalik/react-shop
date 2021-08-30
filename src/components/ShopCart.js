@@ -2,10 +2,9 @@ import './ShopCart.css'
 
 const ShopCart = (props) => {
   return (
-    <div id="shop-cart">
-      <p>Shopping Cart</p>
+    <div id='shop-cart'>
       <p>Items: {props.itemsTotal}</p>
-      <button>Checkout</button>
+      <button id='cart-btn'>Checkout</button>
     </div>
   )
 }

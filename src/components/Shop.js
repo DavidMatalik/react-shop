@@ -38,7 +38,7 @@ const Shop = () => {
 
   return (
     <div>
-      <h1>This is Shop</h1>
+      <h1></h1>
       <section id='items'>
         <ShopCart itemsTotal={itemsTotal} />
         {items}
