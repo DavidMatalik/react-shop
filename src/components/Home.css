@@ -1,0 +1,30 @@
+section {
+  margin-top: 60px;
+  padding: 0 30px;
+}
+
+.p-home {
+  margin-top: 20px;
+  font-size: 180%;
+}
+
+h1 {
+  font-size: 200%;
+  font-weight: bold;
+  padding: 40px;
+}
+
+.cart-img {
+  margin-top: 100px;
+  width: 30%;
+  height: 30%;
+  min-width: 300px;
+  min-height: 300px;
+  transition: transform 0.5s, filter 1s;
+}
+
+.cart-img:hover {
+  filter: invert(62%) sepia(22%) saturate(1378%) hue-rotate(160deg)
+    brightness(88%) contrast(94%);
+  transform: scale(1.05);
+}
