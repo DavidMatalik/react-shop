@@ -13,7 +13,7 @@ const Shop = () => {
 
     if (form.checkValidity()) {
       items = parseInt(items)
-      setItemTotal(items + itemsTotal)
+      setItemTotal((itemsTotal) => items + itemsTotal)
     }
   }
 
