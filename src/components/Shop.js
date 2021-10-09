@@ -8,13 +8,10 @@ const Shop = () => {
   const [items, setItems] = useState([])
 
   const updateCart = (ev, items) => {
-    const form = ev.target
     ev.preventDefault()
 
-    if (form.checkValidity()) {
-      items = parseInt(items)
-      setItemTotal((itemsTotal) => items + itemsTotal)
-    }
+    items = parseInt(items)
+    setItemTotal((itemsTotal) => items + itemsTotal)
   }
 
   useEffect(() => {
