@@ -9,8 +9,8 @@ function App() {
     <div className='App font-Timeless'>
       <Router>
         <Nav />
-        <Route path='/' exact component={Home} />
-        <Route path='/shop' component={Shop} />
+        <Route path='/react-shop' exact component={Home} />
+        <Route path='/react-shop/shop' component={Shop} />
       </Router>
     </div>
   )

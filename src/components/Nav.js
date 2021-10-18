@@ -5,10 +5,10 @@ const Nav = () => {
   return (
     <nav>
       <ul>
-        <NavLink exact to='/' id='home-tab' className='nav-link'>
+        <NavLink exact to='/react-shop' id='home-tab' className='nav-link'>
           <li>Home</li>
         </NavLink>
-        <NavLink to='/shop' id='shop-tab' className='nav-link'>
+        <NavLink to='/react-shop/shop' id='shop-tab' className='nav-link'>
           <li>Shop</li>
         </NavLink>
       </ul>
